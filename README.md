@@ -1,4 +1,4 @@
-## Responsive Portfolio Website ✨
+## Portfolio✨
 
 Responsive Portfolio Website Using HTML, CSS and JavaScript, with a beautiful user interface. 
 Website contains: 
@@ -7,10 +7,8 @@ Website contains:
 - About
 - Skills
 - Qualification
-- Services
 - Portfolio
 - Project in mind
-- Testimonial
 - Contact
 - Footer 
 
