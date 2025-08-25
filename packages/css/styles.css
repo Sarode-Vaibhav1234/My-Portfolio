@@ -451,118 +451,53 @@ img {
 /*==================== SKILLS ====================*/
 
 .skills__container {
-  row-gap: 0;
-}
-
-.skills__header {
   display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%; 
 }
 
-.skills__icon,
-.skills__arrow {
-  font-size: 2rem;
-  color: var(--first-color);
+.skills__content {
+  background-color: var(--first-color);
+  width: 100%; 
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.skills__icon {
-  margin-right: var(--mb-0-75);
+body.dark-theme .skills__content {
+  background-color: var(--container-color); /* Your dark card color */
+}
+
+.skills__content:hover {
+  transform: translateY(-5px);
 }
 
 .skills__title {
   font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
 }
 
-.skills__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills__arrow {
-  margin-left: auto;
-  transition: 0.4s;
-}
-
-.skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
-.skills__titles {
+.skills__logos {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 4rem;
 }
 
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+.skills__logos i {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
+.skills__logos i:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 8px var(--first-color));
 }
 
-.skills__bar {
-  background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills__html {
-  width: 90%;
-}
-
-.skills__css {
-  width: 80%;
-}
-
-.skills__js {
-  width: 60%;
-}
-
-.skills__java {
-  width: 80%;
-}
-
-.skills__cpp {
-  width: 50%;
-}
-
-.skills__c {
-  width: 50%;
-}
-
-.skills__mysql {
-  width: 80%;
-}
-.skills__php {
-  width: 70%;
-}
-.skills__mongo {
-  width: 50%;
-}
-
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-  transform: rotate(-180deg);
-}
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
@@ -736,7 +671,7 @@ img {
   visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+/*==================== Project ====================*/
 .portfolio__container {
   overflow: initial;
 }
